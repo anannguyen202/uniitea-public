@@ -1,0 +1,354 @@
+.product {
+    width: 70%;
+    padding-top: 55%;
+    /* position: relative; */
+}
+
+.product-wrap {
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .product {
+        width: 33.33%;
+        padding-top: 37.033333333333333%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product {
+        width: 80%;
+        padding-top: 70%;
+    }
+}
+
+.product.empty {
+    padding-top: 13.888888888888889%;
+}
+
+@media only screen and (max-width: 768px) {
+    .product.empty {
+        display: none;
+    }
+}
+
+.product.empty .dot-1 {
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    margin-left: 7.5%;
+}
+
+.product.empty .dot-2 {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 27.5%;
+    margin-right: 7.5%;
+}
+
+.product .dot {
+    position: absolute;
+    width: 35%;
+}
+
+.product .product-thumbnail {
+    position: absolute;
+    width: 50%;
+}
+
+.product .product-info {
+    color: #0F3F5A;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.aleft {
+    position: absolute;
+}
+
+.product .product-info .product-title {
+    font-family: "Coiny-Regular";
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .product .product-info .product-title {
+        font-size: 95%;
+    }
+}
+
+.product .product-info .product-price {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .product .product-info .product-price {
+        font-size: 95%;
+    }
+}
+
+.product .product-info .product-price span:not(:last-of-type):after {
+    content: '|';
+    display: inline-block;
+    margin: 0 5px;
+    margin-right: 1px;
+}
+
+.product .left .dot-1 {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 83.5%;
+    margin-right: 7.7%;
+}
+
+.product .left .dot-2 {
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    margin-left: 7.7%;
+}
+
+.product .left .product-thumbnail {
+    margin-bottom: 0.5%;
+    margin-left: -25%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.product .left .product-thumbnail:hover {
+    margin-bottom: 6.6%;
+}
+
+.product .left .product-info {
+    margin-bottom: 25%;
+    margin-left: 55%;
+}
+
+@media only screen and (max-width: 576px) {
+    .product .left .product-info {
+        margin-left: 52.5%;
+    }
+}
+
+.product .right .dot-1 {
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    margin-left: 7.7%;
+}
+
+.product .right .dot-2 {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 28%;
+    margin-right: 7.5%;
+}
+
+.product .right .product-thumbnail {
+    margin-bottom: 28%;
+    margin-left: 25.5%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.product .right .product-thumbnail:hover {
+    margin-bottom: 31.6%;
+}
+
+.product .right .product-info {
+    margin-bottom: 50%;
+    margin-right: 55%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 576px) {
+    .product .right .product-info {
+        margin-right: 52.5%;
+    }
+}
+
+.product .product-thumbnail .product-shadow {
+    position: absolute;
+    max-width: 125%;
+    margin-bottom: -30%;
+    margin-left: 32%;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-thumbnail img {
+    width: 100%;
+}
+
+.product .product-thumbnail:hover .product-shadow {
+    opacity: .4;
+    max-width: 100%;
+    margin-bottom: -24%;
+    margin-left: 28%;
+}
+
+.bc, .product .left .product-thumbnail, .product .right .product-thumbnail, .product .product-thumbnail .product-shadow {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.br, #mobile-menu .menu-lang, .product .right .product-info {
+    bottom: 0;
+    right: 0;
+}
+
+/*  */
+
+.ly {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.size-ly {
+    display: flex;
+    justify-content: center;
+}
+
+.header-text-menu {
+    margin-bottom: 0;
+    padding: 0;
+    font-family: "Coiny-Regular";
+    text-transform: uppercase;
+}
+
+.p-label {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #F5B51B;
+}
+
+.p-item h4, .p-item p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.p-item h4 {
+    color: #0F3F5A;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.p-name {
+    display: flex;
+}
+
+.p-name img {
+    margin-left: 5px;
+}
+
+.menu-text {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.menu-ly {
+    padding-top: 140px;
+}
+
+/*  */
+
+.p-ly {
+    display: flex;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.t-ly:hover .img-ly {
+    transform: translate(0, -5%);
+}
+
+.t-ly:hover .shadow-ly {
+    opacity: 0;
+}
+
+.t-ly {
+    position: relative;
+    width: 50%;
+}
+
+.t-ly img {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-top: -29%;
+}
+
+.t-ly .img-ly, .t-ly .shadow-ly {
+    width: 100%;
+}
+
+.dot-ly {
+    width: 60%;
+    left: 20%;
+    bottom: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.t-ly .shadow-ly {
+    position: absolute;
+    left: 25%;
+    bottom: -15%;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.i-ly {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.i-ly .ly-title {
+    font-family: "Coiny-Regular";
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 576px) {
+    .i-ly .ly-title {
+        font-size: 95%;
+    }
+}
+
+.i-ly .ly-price {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .i-ly .ly-price {
+        font-size: 95%;
+    }
+}
+
+.i-ly .ly-price span:not(:last-of-type):after {
+    content: '|';
+    display: inline-block;
+    margin: 0 5px;
+    margin-right: 1px;
+}

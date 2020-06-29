@@ -1,0 +1,110 @@
+<div id="main-footer">
+    <div class="container-fluid">
+        <style class="custom-css-297">
+            .vc_custom_1544853213337 {
+                margin-right: -20% !important;
+            }
+
+            .vc_custom_1545213395307 {
+                margin-bottom: 0px !important;
+            }
+        </style>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="p1"><span style="color: #ffffff;">{{ 'CONTACT_US' | translate }}</span></h2>
+                </div>
+                <div class="col-md-8">
+                    <form id="gform" class="wpcf7-form">
+                        <div id="contact-form">
+                            <div class="row">
+                                <div class="col-12 col-md-5"><span class="wpcf7-form-control-wrap fullname"><input
+                                            type="text" name="fullname" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                            placeholder="{{ 'FULLNAME' | translate }}" required></span></div>
+                                <div class="col-6 col-md-3"><span class="wpcf7-form-control-wrap tel"><input type="tel"
+                                            name="tel" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel"
+                                            aria-invalid="false" placeholder="{{ 'PHONE' | translate }}"></span></div>
+                                <div class="col-6 col-md-4"><span class="wpcf7-form-control-wrap email"><input
+                                            type="email" name="email" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                            aria-required="true" aria-invalid="false"
+                                            placeholder="{{ 'EMAIL' | translate }}"></span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-8"><span class="wpcf7-form-control-wrap message"><input
+                                            type="text" name="message" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                            placeholder="{{ 'CONTACT_REASON' | translate }}" required></span></div>
+                                <div class="col-12 col-md-4 submit-bt"><input type="submit" value="Gửi"></div>
+                            </div>
+                        </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="language-list-horizontal">
+                        <li [class.current-language]="translate.currentLang == 'vi'" class="footer-lang-item">
+                            <a href="" (click)="changeLang('vi')"><span class="wpml-ls-native">VI</span></a>
+                        </li>
+                        <li [class.current-language]="translate.currentLang == 'en'" class="footer-lang-item">
+                            <a href="" (click)="changeLang('en')"><span class="wpml-ls-display">EN</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <div class="f-2">
+                            <div class="social-links hover">
+                                <p class="p1">
+                                    <a href="https://www.facebook.com/uniiteavn/" target="_blank"
+                                        rel="noopener">Facebook</a><br>
+                                    <a href="https://www.instagram.com/uniiteavn/" target="_blank"
+                                        rel="noopener">Instagram</a>
+                                </p>
+                            </div>
+                            <div class="info-contact">
+                                <div class="row">
+                                    <div class="col-md-5 col-3">
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <!-- <p class="p1">Văn phòng<br>
+                                            <span style="color: #034a98;">.</span></p> -->
+                                                <p class="p1">{{ 'EMAIL' | translate }}</p>
+                                                <p class="p1">{{ 'PHONE' | translate }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-9">
+                                        <p class="p1"><a href="mailto:uniiteavn@gmail.com" target="_blank"
+                                                rel="noopener">uniiteavn@gmail.com</a></p>
+                                        <p class="p1"><a href="tel:+84365188718">0365188718</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p class="p1">© 2020 – ALL RIGHT RESERVED.
+                    <!-- Site by <a href="https://m-n.associates" target="_blank" rel="noopener">M —
+                        N Associates</a> -->
+                </p>
+                <figure class="on-top-button">
+                    <a href="#main-content" target="_self"
+                        class="scrollTo vc_single_image-wrapper   vc_box_border_grey"><img
+                            src="https://gutacafe.com/wp-content/uploads/2018/10/top.svg"
+                            class="vc_single_image-img attachment-full" alt=""></a>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+</div>

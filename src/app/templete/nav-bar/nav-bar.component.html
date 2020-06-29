@@ -1,0 +1,86 @@
+<div id="main-menu" class="container-fluid">
+    <div class="row m-collapse">
+        <div class="col-4 col-md-4 offset-md-1">
+            <ul id="menu-menu-left" class="menu">
+                <li id="menu-item-510"
+                    class="hover menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-510">
+                    <a routerLink="/">
+                        <div>{{ 'HOME' | translate }}</div>
+                    </a>
+                </li>
+                <!-- <li id="menu-item-44"
+                    class="hover menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-44">
+                    <a routerLink="/menu">
+                        <div>{{ 'MENU' | translate }}</div>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <div class="col-4 col-md-2 text-center">
+            <a id="logo" routerLink="/">
+                <div class="logo"></div>
+                <!-- <img src="../../assets/logo.png" alt="logo"> -->
+            </a>
+        </div>
+        <div class="col-4 col-md-4 text-right">
+            <div class="d-none d-lg-block">
+                <div class="menu-menu-right-container">
+                    <ul id="menu-menu-right" class="menu">
+                        <li id="menu-item-45"
+                            class="hover menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a
+                                routerLink="/store" (click)="goSectionBy('store')">
+                                {{ 'STORE' | translate }}</a></li>
+                        <!-- <li id="menu-item-49"
+                            class="hover menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a
+                                target="_blank" href="http://m.me/uniiteavn">UNII CHAT</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scallop-down scallop-m"></div>
+</div>
+
+<div class="menu-trigger" (click)="toggleMenu()" id="nav-icon1">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div id="mobile-menu" class="text-right">
+    <div class="menu-nav">
+        <ul class="menu">
+            <li class="hover">
+                <a routerLink="/">
+                    {{ 'HOME' | translate }}
+                </a>
+            </li>
+            <li class="hover"><a routerLink="/menu">
+                    {{ 'MENU' | translate }}
+                </a>
+            </li>
+            <li class="hover"><a routerLink="/store" (click)="goSectionBy('store');toggleMenu(false)">
+                    {{ 'STORE' | translate }}
+                </a>
+            </li>
+            <li class="hover menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a target="_blank"
+                    href="http://m.me/uniiteavn">UNII Chat</a></li>
+        </ul>
+    </div>
+    <div class="menu-lang">
+        <div class="wpml-ls-legacy-list-horizontal">
+            <ul>
+                <li [class.current-language]="translate.currentLang == 'vi'"
+                    class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-vi wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
+                    <a href="" (click)="changeLang('vi')" class="wpml-ls-link"><span
+                            class="wpml-ls-native">VI</span></a>
+                </li>
+                <li [class.current-language]="translate.currentLang == 'en'"
+                    class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+                    <a href="" (click)="changeLang('en')" class="wpml-ls-link"><span
+                            class="wpml-ls-display">EN</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

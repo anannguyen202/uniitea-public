@@ -1,0 +1,72 @@
+<div id="main-content" class="container-fluid">
+    <div class="row item-vh">
+        <div class="d">
+            <div class="scallop-down scallop-home"></div>
+        </div>
+    </div>
+
+    <div class="row item-vh">
+        <div class="col-md-6 col-12">
+            <div class="row">
+                <swiper [config]="config">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" *ngFor="let image of images" [src]="image" />
+                    </div>
+                </swiper>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 center-box">
+            <div class="inner-box">
+                <h1 class="p1">{{ 'OUR_STORY_TITLE' | translate }}</h1>
+                <p>{{ 'OUR_STORY_CONTENT' | translate }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row item-vh enjoy-wrap">
+        <div class="col-md-6 center-box">
+            <div class="inner-box">
+                <h1 class="p1">{{ 'ENJOY_TITLE' | translate }}</h1>
+                <p>{{ 'ENJOY_CONTENT' | translate }}</p>
+            </div>
+        </div>
+        <div class="col-md-6 enjoy">
+            <img src="../../assets/img/enjoy_o.png" class="" alt=""
+                srcset="../../assets/img/enjoy_o.png 1150w, ../../assets/img/enjoy_o.png 265w, ../../assets/img/enjoy_o.png 768w, ../../assets/img/enjoy_o.png 906w"
+                sizes="(max-width: 1150px) 100vw, 1150px">
+        </div>
+    </div>
+
+    <div class="row item-vh">
+        <div class="col-md-6 col-12">
+            <div class="row item-vh wrap-staff">
+                <div class="staff"></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 center-box">
+            <div class="inner-box">
+                <h1 class="p1">{{ 'EMPLOYMENT_TITLE' | translate }}</h1>
+                <p>{{ 'EMPLOYMENT_CONTENT' | translate }}</p>
+                <br>
+                <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-grey"
+                    routerLink="" title=""
+                    (click)="goSectionBy('main-footer')">{{ 'EMPLOYMENT_BUTTON' | translate }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="store" id="store">
+    <div class="container">
+        <h1 class="p1 text-center">{{ 'OUR_STORE' | translate }}</h1>
+        <div class="pdt-80 center-box">
+            <div class="wrap-store">
+                <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/852/85236698.jpg" alt="">
+                <div class="info-store">
+                    <h2>{{ 'ADDRESS_STORE' | translate }}</h2>
+                    <p>0365188718</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

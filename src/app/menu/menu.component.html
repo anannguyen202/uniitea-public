@@ -1,0 +1,162 @@
+<div id="main-content" class="relative">
+    <div class="menu-ly">
+        <div class="container">
+            <div class="row">
+                <ng-container *ngFor="let c of photoMenus">
+                    <div class="col-sm-4 col-6">
+                        <div class="p-ly">
+                            <div class="t-ly">
+                                <img class="img-ly" [src]="c.img" alt="Espresso">
+                                <img class="shadow-ly" src="../../assets/img/shadow.png" alt="dot">
+                                <img class="dot-ly" src="../../assets/shape/dot-orange.svg" alt="dot">
+                            </div>
+                            <div class="t-dot">
+                            </div>
+                            <div class="i-ly">
+                                <div class="ly-title">{{c.name}}</div>
+                                <div class="ly-price">
+                                    <span>S <strong>{{c.sizeM}}</strong></span>
+                                    <span>M <strong>{{c.sizeL}}</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <div class="menu-sandwich">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <img width="100%" src="https://gutacafe.com/wp-content/uploads/2018/10/sandwich-tuna-2.png">
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <img width="100%"
+                                src="https://gutacafe.com/wp-content/uploads/2018/10/sandwich-hamcheese-2.png">
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <img width="100%" src="https://gutacafe.com/wp-content/uploads/2018/10/sandwich-ga-2.png">
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <img width="100%" src="https://gutacafe.com/wp-content/uploads/2018/10/banhmi-opla-2.png">
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <img width="100%" src="https://gutacafe.com/wp-content/uploads/2018/10/banhmi-xa-xiu-2.png">
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <img width="100%" src="https://gutacafe.com/wp-content/uploads/2018/10/banhmi-ga-2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bt bt-menu" (click)="toggleMenu()">
+        <img class="bt-img absolute cc" src="../../assets/shape/menu-img.svg" alt="menu">
+        <img class="bt-text absolute cc" src="../../assets/shape/menu-text.svg" alt="menu">
+    </div>
+</div>
+
+<div class="menu-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <ng-container *ngFor="let c of textMenus">
+                    <ng-container *ngIf="c.position == 1">
+                        <div class="row p-label">
+                            <div class="col-md-8 col-8">
+                                <h2 class="header-text-menu">{{c.label}}</h2>
+                            </div>
+                            <div class="col-md-1 col-2 ly">
+                                <img width="30px" src="../../assets/shape/21.svg"
+                                    class="vc_single_image-img attachment-full" alt=""></div>
+                            <div class="col-md-1 col-2 ly">
+                                <img width="30px" src="../../assets/shape/22.svg"
+                                    class="vc_single_image-img attachment-full" alt="">
+                            </div>
+                        </div>
+                        <div class="row p-item" *ngFor="let p of c.list">
+                            <div class="col-md-8 col-8 p-name">
+                                <h4>{{p.name}}</h4>
+                                <img *ngIf="p.tryHot == true" width="30px" src="../../assets/shape/hot_try.svg" alt="">
+                            </div>
+                            <div class="col-md-1 col-2 size-ly">
+                                <p>{{p.sizeM}}</p>
+                            </div>
+                            <div class="col-md-1 col-2 size-ly">
+                                <p>{{p.sizeL}}</p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </ng-container>
+            </div>
+            <div class="col-md-4">
+                <ng-container *ngFor="let p of textMenus">
+                    <ng-container *ngIf="p.position == 2">
+                        <div class="row p-label">
+                            <div class="col-md-8 col-8">
+                                <h2 class="header-text-menu">{{p.label}}</h2>
+                            </div>
+                            <div class="col-md-1 col-2 ly">
+                                <img width="30px" src="../../assets/shape/21.svg"
+                                    class="vc_single_image-img attachment-full" alt=""></div>
+                            <div class="col-md-1 col-2 ly">
+                                <img width="30px" src="../../assets/shape/22.svg"
+                                    class="vc_single_image-img attachment-full" alt="">
+                            </div>
+                        </div>
+                        <div class="row p-item" *ngFor="let i of p.list">
+                            <div class="col-md-8 col-8">
+                                <h4 class="p-name">{{i.name}}</h4>
+                            </div>
+                            <div class="col-md-1 col-2 size-ly">
+                                <p>{{i.sizeM}}</p>
+                            </div>
+                            <div class="col-md-1 col-2 size-ly">
+                                <p>{{i.sizeL}}</p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </ng-container>
+            </div>
+            <div class="col-md-4">
+                <ng-container *ngFor="let p of textMenus">
+                    <ng-container *ngIf="p.position == 3">
+                        <div class="row p-label">
+                            <div class="col-md-8 col-8">
+                                <h2 class="header-text-menu">{{p.label}}</h2>
+                            </div>
+                            <div class="col-md-1 col-2 ly">
+                                <img width="30px" src="../../assets/shape/21.svg"
+                                    class="vc_single_image-img attachment-full" alt=""></div>
+                            <div class="col-md-1 col-2 ly">
+                                <img width="30px" src="../../assets/shape/22.svg"
+                                    class="vc_single_image-img attachment-full" alt="">
+                            </div>
+                        </div>
+                        <div class="row p-item" *ngFor="let i of p.list">
+                            <div class="col-md-8 col-8">
+                                <h4 class="p-name">{{i.name}}</h4>
+                            </div>
+                            <div class="col-md-1 col-2 size-ly">
+                                <p>{{i.sizeM}}</p>
+                            </div>
+                            <div class="col-md-1 col-2 size-ly">
+                                <p>{{i.sizeL}}</p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
